@@ -1,5 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import Icon from "../components/icon/Icon";
+import Title from "../components/title/Title";
+import Desc from "../components/desc/Desc";
 
 export default function Screen02() {
     return (
@@ -14,7 +17,9 @@ export default function Screen02() {
                 <Button title="Login" color={`#E3C000`}></Button>
                 <Button title="Sign Up" color={`#E3C000`}></Button>
             </View>
-            <Text style={{ marginTop: "21px" }}>HOW WE WORK?</Text>
+            <Text style={{ marginTop: "21px", fontWeight: "bold" }}>
+                HOW WE WORK?
+            </Text>
         </View>
     );
 }
@@ -44,7 +49,6 @@ const styles = StyleSheet.create({
         textAlign: "center",
     },
     btnContainer: {
-        flex: 1,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
